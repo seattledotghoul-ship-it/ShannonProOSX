@@ -1,0 +1,20 @@
+Installation Instructions
+To deploy the system on Windows, macOS, or Linux, follow these steps:
+
+Environment Setup: Ensure Python 3.8+ is installed.
+
+Dependencies: The core system requires NumPy for mathematical processing. Install it via:
+pip install numpy
+
+Directory Initialization: The script automatically generates the necessary filesystem structure upon first run:
+
+~/inanna_ultimate/logs/ (AuditChain storage)
+
+~/inanna_ultimate/data/ (Transaction and profile data)
+
+~/inanna_ultimate/memory/ (Kernel state and identity markers)
+
+Execution: Launch the primary interactive loop by running the script directly:
+python ShannonProOSX.py
+
+Verification: Upon startup, the script performs a "Pure-Python SHA-256 self-check" to verify the integrity of its cryptographic core.
